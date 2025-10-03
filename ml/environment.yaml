@@ -1,0 +1,23 @@
+name: mlops-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python and Data Science
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn=1.3.0
+  - matplotlib
+  - notebook
+  - ipykernel
+  - xgboost
+  - mlflow
+
+  # Utilities
+  - pyarrow # For efficient data serialization (used by MLflow)
+
+  # Pip packages
+  - pip:
+    - scikit-learn-extra
