@@ -1,0 +1,21 @@
+name: dl-ops
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python and Data Science
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+
+  # Notebook support
+  - notebook
+  - ipykernel
+
+  # Pip packages for the recommender notebook
+  - pip:
+    - sentence-transformers
+    - scikit-learn-extra
